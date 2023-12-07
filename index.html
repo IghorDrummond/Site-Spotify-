@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Normalize Css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <!-- Estilo Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Icone (febre) -->
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Música para todos - Spotify</title>
+
+    <!-- HTML5Shiv -->
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header class="p-4 fixed-top"><!-- Inicio do Cabeçalho -->
+        <div class="row"><!-- Inicio do Row -->
+          <div class="col-6 col-md-6"><!-- Inicio da Primeira Coluna -->
+            <a href="index.html">
+              <img class="px-5" src="img/spotify.svg" title="Spotify" alt="Logo do Spotify ao lado esquerdo Superior" width="240">
+            </a>  
+          </div><!-- Fim da Primeira Coluna -->
+
+          <div class="col-6 col-md-6"><!-- Inicio da Segunda Coluna -->
+            <nav class="navbar-nav navbar-expand-lg ml-auto w-50"><!-- Inicio da Barra de Navegação -->
+
+              <!-- Botão Menu (Style Hamburguer) -->      
+              <button onclick="animaMenu()" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#pocket-menu">
+                <i id="menu-hamburguer" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="pocket-menu">
+                <!--Navegação -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Premium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Ajuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Baixar</a>
+                  </li>  
+                  <li id="divisor" class="d-none d-lg-block nav-item border-left border-light">
+                  </li>   
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Inscrever-se</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Entrar</a>
+                  </li>                                                 
+                </ul>  
+              </div>    
+            </nav><!-- Fim da Barra de Navegação -->
+          </div><!-- Fim da Segunda Coluna -->
+        </div><!-- Fim do Row -->
+    </header><!-- Fim do Cabeçalho -->
+
+    <main> <!--Incio do Main -->
+      
+      <section id="home" class="d-flex"><!--Inicio da Sessão -->
+        <div class="container align-self-center"><!-- Inicio do Container -->
+          <div class="row"><!-- Inicio do Row -->
+            <div id="capa" class="col-md-12"><!-- Inicio da Primeira Coluna -->
+              <h1>Música para Todos</h1>
+              <a href="">
+                <button class="btn btn-lg btn-free">
+                  Aproveite o Spotify Free
+                </button>
+              </a>
+              <a href="">
+                <button class="btn btn-lg btn-premium">
+                  Obter Spotify Premium
+                </button>
+              </a>
+            </div><!-- Fim da Primeira Coluna -->
+          </div><!-- Fim da Row -->
+        </div><!-- Fim do Container -->
+      </section><!-- Fim da Sessão -->
+
+      <section class="ss bg-light"><!-- Inicio do Conteúdos -->
+        <div class="cc p-5 float-lg-left w-50 h-100">
+          wdwdwd
+        </div>
+        <div class="cc p-5 float-lg-right w-50 h-100">
+          wdwd
+        </div> 
+        <div class="clear"></div>
+      </section><!-- Fim do Conteúdos -->
+    </main><!-- Fim do Main -->
+
+    <!-- Script do Site -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Font Awesom -->
+    <script src="https://kit.fontawesome.com/c488e9ed48.js" crossorigin="anonymous"></script>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
