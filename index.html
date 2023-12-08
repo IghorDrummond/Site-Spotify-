@@ -1,115 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Normalize Css -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Estilo Css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Normalize Css -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-    <!-- Icone (febre) -->
-    <link rel="icon" href="img/favicon.png">
+  <!-- Estilo Css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Música para todos - Spotify</title>
+  <!-- Icone (febre) -->
+  <link rel="icon" href="img/favicon.png">
 
-    <!-- HTML5Shiv -->
-    <!--[if lt IE 9]>
-      <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+  <title>Música para todos - Spotify</title>
 
-    <header class="p-4 fixed-top"><!-- Inicio do Cabeçalho -->
+  <!-- HTML5Shiv -->
+  <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+
+  <header class="p-4 fixed-top"><!-- Inicio do Cabeçalho -->
+    <div class="row"><!-- Inicio do Row -->
+      <div class="col-6 col-md-6"><!-- Inicio da Primeira Coluna -->
+        <a href="index.html">
+          <img class="px-5" src="img/spotify.svg" title="Spotify" alt="Logo do Spotify ao lado esquerdo Superior"
+            width="240">
+        </a>
+      </div><!-- Fim da Primeira Coluna -->
+
+      <div class="col-6 col-md-6"><!-- Inicio da Segunda Coluna -->
+        <nav class="navbar-nav navbar-expand-lg ml-auto w-50"><!-- Inicio da Barra de Navegação -->
+
+          <!-- Botão Menu (Style Hamburguer) -->
+          <button onclick="animaMenu()" class="navbar-toggler ml-auto" data-toggle="collapse"
+            data-target="#pocket-menu">
+            <i id="menu-hamburguer" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="pocket-menu">
+            <!--Navegação -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="">Premium</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Ajuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Baixar</a>
+              </li>
+              <li id="divisor" class="d-none d-lg-block nav-item border-left border-light">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Inscrever-se</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Entrar</a>
+              </li>
+            </ul>
+          </div>
+        </nav><!-- Fim da Barra de Navegação -->
+      </div><!-- Fim da Segunda Coluna -->
+    </div><!-- Fim do Row -->
+  </header><!-- Fim do Cabeçalho -->
+
+  <main> <!--Incio do Main -->
+
+    <section id="home" class="d-flex"><!--Inicio da Sessão -->
+      <div class="container align-self-center"><!-- Inicio do Container -->
         <div class="row"><!-- Inicio do Row -->
-          <div class="col-6 col-md-6"><!-- Inicio da Primeira Coluna -->
-            <a href="index.html">
-              <img class="px-5" src="img/spotify.svg" title="Spotify" alt="Logo do Spotify ao lado esquerdo Superior" width="240">
-            </a>  
-          </div><!-- Fim da Primeira Coluna -->
-
-          <div class="col-6 col-md-6"><!-- Inicio da Segunda Coluna -->
-            <nav class="navbar-nav navbar-expand-lg ml-auto w-50"><!-- Inicio da Barra de Navegação -->
-
-              <!-- Botão Menu (Style Hamburguer) -->      
-              <button onclick="animaMenu()" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#pocket-menu">
-                <i id="menu-hamburguer" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          <div id="capa" class="col-md-12"><!-- Inicio da Primeira Coluna -->
+            <h1>Música para Todos</h1>
+            <a href="">
+              <button class="btn btn-lg btn-free">
+                Aproveite o Spotify Free
               </button>
+            </a>
+            <a href="">
+              <button class="btn btn-lg btn-premium">
+                Obter Spotify Premium
+              </button>
+            </a>
+          </div><!-- Fim da Primeira Coluna -->
+        </div><!-- Fim da Row -->
+      </div><!-- Fim do Container -->
+    </section><!-- Fim da Sessão -->
 
-              <div class="collapse navbar-collapse" id="pocket-menu">
-                <!--Navegação -->
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Premium</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Ajuda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Baixar</a>
-                  </li>  
-                  <li id="divisor" class="d-none d-lg-block nav-item border-left border-light">
-                  </li>   
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Inscrever-se</a>
-                  </li>  
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Entrar</a>
-                  </li>                                                 
-                </ul>  
-              </div>    
-            </nav><!-- Fim da Barra de Navegação -->
-          </div><!-- Fim da Segunda Coluna -->
-        </div><!-- Fim do Row -->
-    </header><!-- Fim do Cabeçalho -->
+    <section id="Servicos" class="bg-light"><!-- Inicio do Conteúdos -->
 
-    <main> <!--Incio do Main -->
-      
-      <section id="home" class="d-flex"><!--Inicio da Sessão -->
-        <div class="container align-self-center"><!-- Inicio do Container -->
-          <div class="row"><!-- Inicio do Row -->
-            <div id="capa" class="col-md-12"><!-- Inicio da Primeira Coluna -->
-              <h1>Música para Todos</h1>
-              <a href="">
-                <button class="btn btn-lg btn-free">
-                  Aproveite o Spotify Free
-                </button>
-              </a>
-              <a href="">
-                <button class="btn btn-lg btn-premium">
-                  Obter Spotify Premium
-                </button>
-              </a>
-            </div><!-- Fim da Primeira Coluna -->
-          </div><!-- Fim da Row -->
-        </div><!-- Fim do Container -->
-      </section><!-- Fim da Sessão -->
-
-      <section class="ss bg-light"><!-- Inicio do Conteúdos -->
-        <div class="cc p-5 float-lg-left w-50 h-100">
-          wdwdwd
+      <div class="float-left coluna1-prim h-100 d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="album d-block" src="img/img1.jpg" alt="" width="240px">
+              <img class="album d-block" src="img/img2.jpg" alt="" width="240px">
+            </div>
+            <div class="col-md-6">
+              <img class="album d-block" src="img/img3.jpg" alt="" width="240px">
+              <img class="album d-block" src="img/img4.jpg" alt="" width="240px">
+            </div>
+          </div>
         </div>
-        <div class="cc p-5 float-lg-right w-50 h-100">
-          wdwd
-        </div> 
-        <div class="clear"></div>
-      </section><!-- Fim do Conteúdos -->
-    </main><!-- Fim do Main -->
+      </div>
 
-    <!-- Script do Site -->
-    <script type="text/javascript" src="js/script.js"></script>
-    <!-- Font Awesom -->
-    <script src="https://kit.fontawesome.com/c488e9ed48.js" crossorigin="anonymous"></script>
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+      <div class="coluna1-secon float-left w-50 h-100 d-block"><!-- Inicio da Primeira Coluna -->
+        <button class="btn btn-color mt-2 w-100" onclick="mostramais(1)">Ver Mais</button>
+        <div id="linha1"><!-- Inicio da Primeira Linha -->
+          <div class="separa"></div><!-- Separa Albuns -->
+          <img class="imagens d-block" onmousemove="mostraCd(1)" onmouseleave="saiu(1)" src="img/img1.jpg" alt="">
+          <div id="disco1" class="informacao"><!-- Inicio da SoundTrack -->
+            Artista: Justin Bieber<br>
+            Musica: Love YourSelf <br>
+            Album: Purpose <br>
+            Lançamento: 2019 <br>
+            <audio id="musica1">
+              <source src="bd/Justin Bieber - Love Yourself (Official Video).mp3" type="audio/mpeg">
+            </audio>
+          </div><!-- Fim da SoundTrack -->
+          <div class="separa"></div><!-- Separa Albuns -->
+          <img class="imagens" onmousemove="mostraCd(2)" onmouseleave="saiu(2)" src="img/img2.jpg" alt="">
+          <div id="disco2" class="informacao"><!-- Inicio da SoundTrack -->
+            Artista: Zara Larsson<br>
+            Musica: Lush Life<br>
+            Album: Lush Life<br>
+            Lançamento: 2015
+            <br>
+            <audio id="musica2">
+              <source src="bd/Zara Larsson - Lush Life.mp3" type="audio/mpeg">
+            </audio>
+          </div><!-- Fim da SoundTrack -->
+        </div><!-- Fim da Primeira Linha -->
+
+        <div id="linha2"><!-- Inicio da Segunda Linha -->
+          <div class="separa"></div><!-- Separa Albuns -->
+          <img class="imagens" onmousemove="mostraCd(3)" onmouseleave="saiu(3)" src="img/img3.jpg" alt="">
+          <div id="disco3" class="informacao"><!-- Inicio da SoundTrack -->
+            Artista: Bryson Tiller <br>
+            Musica: Intro(Difference) <br>
+            Album: TrapSoul <br>
+            Lançamento: 2015
+            <br>
+            <audio id="musica3">
+              <source src="bd/Intro (Difference).mp3" type="audio/mpeg">
+            </audio>
+          </div><!-- Fim da SoundTrack -->
+          <div class="separa"></div><!-- Separa Albuns -->
+          <img class="imagens" onmousemove="mostraCd(4)" onmouseleave="saiu(4)" src="img/img4.jpg" alt="">
+          <div id="disco4" class="informacao"><!-- Inicio da SoundTrack -->
+            Artista: Daya <br>
+            Musica: Insomnia <br>
+            Album: Daya <br>
+            Lançamento: 2015
+            <br>
+            <audio id="musica4">
+              <source src="bd/Daya - Insomnia.mp3" type="audio/mpeg">
+            </audio>
+          </div><!-- Fim da SoundTrack -->
+        </div><!-- Fim da Segunda Linha -->
+        <button class="btn btn-color mt-2 w-100" onclick="mostramais(2)">Ver Mais</button>
+      </div><!-- Fim da Primeira Coluna -->
+
+      <div class="coluna2 float-right p-3"><!-- Inicio da Segunda Coluna -->
+        <h2>Oque o Spotify tem?</h2>
+        <h3 class="titulo">Músicas</h3>
+        <p>
+          O Spotify tem milhões de músicas. Escute seus sons
+          favoritos, descubra novas músicas e reúna seus favoritos em um
+          só lugar.
+        </p>
+        <h3 class="titulo">Playlists</h3>
+        <p>
+          No Spotify você encontra uma playlist para cada momento.
+          todas feitas por fanáticos e especialistas da músicas.
+        </p>
+        <h3 class="titulo">Novos Lançamentos</h3>
+        <p>
+          Escute os novos lançamentos de singles e álbuns da semana e
+          veja o que está bombando no Top 50.
+        </p>
+      </div><!-- Fim da Segunda Coluna -->
+      <div class="clear"></div><!-- Limpar Float -->
+
+      <button class="musica-play btn" onclick="ativatela()">Aperte para escutar as principais músicas de cada Album</button>
+    </section><!-- Fim do Conteúdos -->
+  </main><!-- Fim do Main -->
+
+  <!-- Script do Site -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- Font Awesom -->
+  <script src="https://kit.fontawesome.com/c488e9ed48.js" crossorigin="anonymous"></script>
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
