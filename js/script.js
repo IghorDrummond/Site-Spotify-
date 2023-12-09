@@ -4,6 +4,8 @@ var iconAnimation = document.querySelector("#menu-hamburguer");
 var coluna_prim = document.querySelector(".coluna1-prim");
 var coluna_secon = document.querySelector(".coluna1-secon");
 var tela = document.querySelector("body").clientWidth;
+var telaHTML = document.querySelector("html").clientWidth;
+var oHtml = document.querySelector("html");
 var elem = null;
 var elemAux = null;
 var audio = null;
@@ -14,6 +16,8 @@ var musica = ["#musica1", "#musica2", "#musica3", "#musica4"];
 var nCont = 180;
 var click = 0;
 var gravaDisc = 0;
+
+oHtml.style.height = telaHTML.toString();
 
 //Função que faz animação do Hambuguer Menu
 function animaMenu(){

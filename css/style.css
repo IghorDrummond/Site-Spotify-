@@ -9,7 +9,6 @@ body{
 	background-attachment: fixed;
 	background-size: 100%;
 	font-family: Helvetica, Arial, sans-serif;
-	overflow-x: hidden;
 }
 .clear{
 	clear: both;
@@ -138,17 +137,41 @@ header{
 #opcao p{
 	color: white;
 }	
-#opcao h2, h3, p{
-	margin-left: 20px;
+#opcao p, #opcao h2, #opcao h3{
+	margin-left: 25px;
 }
 #celulares .row{
 	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	        transform: rotate(30deg);
 	padding: 30px;
 }
-.caixa{
-	width: 95%;
-	padding-: 20px;
+.caixas{
+	width: 93%;
+}
+
+/* Rodapé */
+footer{
+	width: 100%;
+	padding: 25px;
 	box-sizing: border-box;
+	background: black;
+	height: 20vh;
+	position: absolute;
+}
+
+.rodape ul{
+	list-style: none;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+}
+.rodape h5{
+	text-transform: uppercase;
+}
+.iconerodape a{
+	margin: 0 25px;
 }
 
 /* Hovers */
@@ -180,14 +203,35 @@ header{
 	color: white;
 	display: block;
 }
+.iconerodape a>img:hover{
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
 
 /* Animação */
+@-webkit-keyframes surgi{
+	from{
+		margin-left: 0px;
+	}
+	to{
+		margin-left: 240px;
+	}
+}
 @keyframes surgi{
 	from{
 		margin-left: 0px;
 	}
 	to{
 		margin-left: 240px;
+	}
+}
+
+@-webkit-keyframes saida{
+	from{
+		margin-left: 240px;
+	}
+	to{
+		margin-left: 0px;
 	}
 }
 
@@ -204,7 +248,9 @@ header{
 @media (max-width: 575.98px) { 
 	body{
 		font-size: 12px;
-		overflow-x: hidden;
+	}	
+	footer{  
+		height: auto;
 	}	
 	#capa h1{
 		margin-top: 90px;
@@ -239,12 +285,29 @@ header{
 		width: 100%;
 		font-size: 0.8em;
 	}
+	@-webkit-keyframes surgi{
+		from{
+			margin-left: 0px;
+		}
+		to{
+			margin-left: 120px;
+		}
+	}
 	@keyframes surgi{
 		from{
 			margin-left: 0px;
 		}
 		to{
 			margin-left: 120px;
+		}
+	}
+
+	@-webkit-keyframes saida{
+		from{
+			margin-left: 120px;
+		}
+		to{
+			margin-left: 0px;
 		}
 	}
 
