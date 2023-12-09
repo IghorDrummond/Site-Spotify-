@@ -9,10 +9,12 @@ body{
 	background-attachment: fixed;
 	background-size: 100%;
 	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 .clear{
 	clear: both;
 }
+
 /* Cabeçalho */
 header{
 	background-color: rgba(0, 0, 0, 0.6);
@@ -36,12 +38,19 @@ header{
 }
 
 /* Capa */
+.col-md-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 0 !important;
+}
 #home{
 	height: 95vh;
 }
 #capa{
 	color: white;
-	text-align: center;
+  	text-align: center;
 }
 #capa h1{
 	letter-spacing: -0.05em;
@@ -53,7 +62,7 @@ header{
 	font-weight: bold;
 	text-transform: uppercase;
 	border-radius: 60px;
-	margin-top: 5px;
+	margin: 5px auto;
 }
 .btn-free{
 	background-color: #7c25f8;
@@ -114,6 +123,33 @@ header{
 	display: none;
 }
 
+/* Recursos */
+#recursos{
+	padding: 20px 0px;
+}
+#opcao h3{
+	color: #9bf0e1;
+	font-weight: bold;
+}
+#opcao h2{
+	font-weight: bold;
+	color: white;
+}
+#opcao p{
+	color: white;
+}	
+#opcao h2, h3, p{
+	margin-left: 20px;
+}
+#celulares .row{
+	transform: rotate(30deg);
+	padding: 30px;
+}
+.caixa{
+	width: 100%;
+	padding-: 20px;
+	box-sizing: border-box;
+}
 
 /* Hovers */
 .navbar-nav li>a:hover{
@@ -134,6 +170,15 @@ header{
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;	
+}
+.musica-play{
+	margin-top: 10px;
+	scroll-margin-right: auto;
+	border-radius: 60px;
+	background-color: #7c25f8;
+	font-weight: bold;
+	color: white;
+	display: block;
 }
 
 /* Animação */
@@ -162,23 +207,23 @@ header{
 	}	
 	#capa h1{
 		margin-top: 90px;
-		font-size: 2em;
+		font-size: 3em;
 	} 	
 	.btn-free{
-		width: 100vw;
+		width: 100%;
 		font-size: 0.8em;
 	}
 	.btn-premium{
-		width: 100vw;
+		width: 100%;
 		font-size: 0.8em;
 	}		
 	.informacao{
-		width: 150px;
-		height: 150px;
+		width: 120px;
+		height: 120px;
 	}	
 	.imagens{
-		width: 150px;
-		height: 150px;
+		width: 120px;
+		height: 120px;
 	}	
 	.coluna1-prim{
 		width: 100%;
@@ -198,13 +243,13 @@ header{
 			margin-left: 0px;
 		}
 		to{
-			margin-left: 150px;
+			margin-left: 120px;
 		}
 	}
 
 	@keyframes saida{
 		from{
-			margin-left: 150px;
+			margin-left: 120px;
 		}
 		to{
 			margin-left: 0px;

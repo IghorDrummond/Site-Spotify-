@@ -59,7 +59,7 @@ function mostraCd(disco){
 		elem.style.marginLeft = "240px";
 	}else
 	{
-		elem.style.marginLeft = "150px";
+		elem.style.marginLeft = "120px";
 	}
 }
 
@@ -89,12 +89,15 @@ function mostramais(nlinha){
 function ativatela(){
 
 	if(gravaDisc == 0){
-		coluna_prim.className = "coluna1-secon float-left w-50 h-100 d-none";
+		coluna_prim.className = "coluna1-secon float-left w-50 h-100 d-none ";
 		coluna_secon.className = "float-left coluna1-prim w-50 h-100 d-none d-block"
 		gravaDisc++
 	}else{
 		gravaDisc = 0
-		coluna_secon.className = "float-left coluna1-prim w-50 h-100 d-none "
-		coluna_prim.className = "float-left coluna1-prim h-100 d-block";		
+		coluna_secon.className = "float-left coluna1-prim w-50 h-100 d-none"
+
+		if(tela >= 720){
+			coluna_prim.className = "float-left coluna1-prim h-100 d-md-block";	
+		}	
 	}
 }
