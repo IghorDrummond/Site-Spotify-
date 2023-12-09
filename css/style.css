@@ -160,7 +160,10 @@ footer{
 	height: 20vh;
 	position: absolute;
 }
-
+footer span>h5{
+	color: whitesmoke;
+	text-align: center;
+}
 .rodape ul{
 	list-style: none;
 	cursor: pointer;
