@@ -326,6 +326,9 @@ footer span>h5{
 }
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+	footer{  
+		height: auto;
+	}	
 	.coluna1-prim{
 		width: 100%;
 	}
@@ -342,6 +345,9 @@ footer span>h5{
 }
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+	footer{  
+		height: auto;
+	}
 	.coluna1-prim{
 		width: 100%;
 	}
@@ -354,5 +360,14 @@ footer span>h5{
 	.musica-play{
 		width: 100%;
 		font-size: 0.8em;
+	}
+}
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	body{
+		font-size: 12px;
+	}	
+	footer{  
+		height: auto;
 	}
 }
