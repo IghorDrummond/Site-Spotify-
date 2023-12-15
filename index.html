@@ -74,28 +74,63 @@
     </div><!-- Fim do Row -->
   </header><!-- Fim do Cabeçalho -->
 
-  <main > <!--Incio do Main -->
+  <main> <!--Incio do Main -->
 
-    <section id="home" class="d-flex "><!--Inicio da Sessão -->
-      <div class="container align-self-center"><!-- Inicio do Container -->
-        <div class="row"><!-- Inicio do Row -->
-          <div id="capa" class="col-md-12"><!-- Inicio da Primeira Coluna -->
-            <h1>Música para Todos</h1>
-            <a href="">
-              <button class="btn btn-lg btn-free">
-                Aproveite o Spotify Free
-              </button>
-            </a>
-            <a href="">
-              <button class="btn btn-lg btn-premium">
-                Obter Spotify Premium
-              </button>
-            </a>
-          </div><!-- Fim da Primeira Coluna -->
-        </div><!-- Fim da Row -->
-      </div><!-- Fim do Container -->
+    <section id="home"><!--Inicio da Sessão -->
+
+      <div id="carousel-controls" class="carousel slide h-100 d-flex"><!-- Inicido do Carousel -->
+        <div class="carousel-inner align-self-center"><!-- Inicio do Inner -->
+
+          <div class="carousel-item active"> <!-- Inicio do Primeiro Item -->
+            <div class="container"><!-- Inicio do Container -->
+              <div class="row"><!-- Inicio do Row -->
+                <div id="capa" class="col-md-12"><!-- Inicio da Primeira Coluna -->
+                  <h1>Música para Todos</h1>
+                  <a href="">
+                    <button class="btn btn-lg btn-free">
+                      Aproveite o Spotify Free
+                    </button>
+                  </a>
+                  <a href="">
+                    <button class="btn btn-lg btn-premium">
+                      Obter Spotify Premium
+                    </button>
+                  </a>
+                </div><!-- Fim da Primeira Coluna -->
+              </div><!-- Fim da Row -->
+            </div><!-- Fim do Container -->
+          </div><!-- Fim do Primeiro Item -->
+
+          <div class="carousel-item"><!-- Inicio do Segundo Item -->
+            <div class="container"><!-- Inicio do Container -->
+              <div class="row"><!-- Inicio do Row -->
+                <div id="capa" class="col-md-12"><!-- Inicio da Primeira Coluna -->
+                  <h1>Ás Melhores Rádios</h1>
+                  <a href="">
+                    <button class="btn btn-lg btn-premium">
+                      <i class="fa-solid fa-music"></i>
+                      Ouça Agora
+                    </button>
+                  </a>
+                </div><!-- Fim da Primeira Coluna -->
+              </div><!-- Fim da Row -->
+            </div><!-- Fim do Container -->
+          </div><!-- Fim do Primeiro Item -->
+
+          <!-- Controles -->
+          <a href="#carousel-controls" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+
+          <a href="#carousel-controls" class="carousel-control-next" data-slide="prev">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div><!-- Fim do Inner -->
+      </div><!-- Fim do Carousel -->
+
     </section><!-- Fim da Sessão -->
-    
+
     <section id="Servicos" class="bg-light"><!-- Inicio do Conteúdos -->
 
       <div class="float-left coluna1-prim h-100 d-none d-md-block">
@@ -191,11 +226,12 @@
       </div><!-- Fim da Segunda Coluna -->
       <div class="clear"></div><!-- Limpar Float -->
 
-      <button class="musica-play btn" onclick="ativatela()">Aperte para escutar as principais músicas de cada Album</button>
+      <button class="musica-play btn" onclick="ativatela()">Aperte para escutar as principais músicas de cada
+        Album</button>
     </section><!-- Fim do Conteúdos -->
 
     <section id="recursos"><!-- Inicio das Opções -->
-      <div  class="caixas"><!-- Inicio do Container -->
+      <div class="caixas"><!-- Inicio do Container -->
         <div class="row"><!-- Inicio da Row -->
           <div id="opcao" class="col-md-6"><!-- Inicio dos Textos -->
             <h2>Fácil</h2>
@@ -209,7 +245,8 @@
             </p>
             <h3>Descobrir</h3>
             <p>
-              Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.
+              Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das
+              rádios.
             </p>
           </div><!-- Fim dos Textos -->
 
@@ -219,12 +256,12 @@
                 <img class="img-fluid" src="img/iphone1.png" width="280">
               </div>
               <div class="col-md-6">
-                <img class="img-fluid"src="img/iphone2.png" width="280">
+                <img class="img-fluid" src="img/iphone2.png" width="280">
               </div>
             </div><!-- Fim da row -->
           </div><!-- Fim da Coluna Celulares -->
         </div><!-- Fim da Row -->
-      </div><!-- Fim do Container -->      
+      </div><!-- Fim do Container -->
     </section><!-- Fim das Opções -->
 
     <footer><!-- Inicio do Rodapé -->
@@ -259,14 +296,14 @@
                   <li>Presentes</li>
                   <li>Player da Web</li>
                 </ul>
-              </div>                            
+              </div>
             </div>
           </div>
           <div class="col-xl-4 iconerodape">
             <a href="" title="Instagram"><img src="img/instagram.png"></a>
             <a href="" title="Twitter"><img src="img/twitter.png"></a>
             <a href="" title="Facebook"><img src="img/facebook.png"></a>
-          </div>  
+          </div>
         </div>
       </div>
     </footer><!-- Fim do Rodapé -->
